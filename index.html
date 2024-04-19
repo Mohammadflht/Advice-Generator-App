@@ -6,11 +6,10 @@
 
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./images/dice.png"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
     <title>Advice generator</title>
   </head>
@@ -18,16 +17,18 @@
     <section class="container">
       <section class="advice-box">
         <div class="advice-id">
-          <p>ADVICE # <span class="advice-random-id">111</span></p>
+          <p>ADVICE #<span class="advice-random-id">0</span></p>
         </div>
-        <div class="advice-text"><p>❝ <span class="advice-random-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptates quod quaerat!</span> ❞</p></div>
+        <div class="advice-text"><p>❝ <span class="advice-random-text">Please click on the dice and an advice will be randomly selected for you</span> ❞</p></div>
         <div class="devider">
-          <img src="images/pattern-divider-desktop.svg" alt="" class="devider" />
+          <img draggable="false" src="images/pattern-divider-desktop.svg" alt="devider" class="devider" id="desktop" />
+          <img draggable="false" src="images/pattern-divider-mobile.svg" alt="devider" class="devider" id="mobile" />
         </div>
-        <div class="dise">
-          <img src="images/icon-dice.svg" alt="dise" class="dise-image" />
+        <div class="dice">
+          <img draggable="false" src="images/icon-dice.svg" alt="dice" class="dice-image" />
         </div>
       </section>
     </section>
   </body>
+  <script src="main.js"></script>
 </html>
