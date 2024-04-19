@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('/font/Manrope-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Manrope";
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advice-box {
+    width: 500px;
+    height: 300px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 12px;
+    position: relative;
+    padding: 8px;
+}
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 32px;
+}
+.dise {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.devider {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+}
+
+.advice-text {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+    /* background-color: darkblue; */
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: center;
+}
+
+
+
