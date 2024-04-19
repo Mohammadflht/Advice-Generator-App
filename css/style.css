@@ -40,7 +40,7 @@ body {
     transform: translateX(-50%);
     padding-top: 32px;
 }
-.dise {
+.dice {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -52,28 +52,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: box-shadow ease 0.4s;
     &:hover {
         cursor: pointer;
+        box-shadow: 0 0 20px hsl(150, 100%, 66%);
     }
 }
 .devider {
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 20%;
 }
+#mobile {
+    visibility: hidden;
+}
+#desktop {
+    visibility: visible;
+}
+
 
 .advice-text {
     width: 100%;
     font-size: 26px;
     font-weight: 800;
     color: hsl(193, 38%, 86%);
-    /* background-color: darkblue; */
     position: absolute;
     left: 0;
     top: 40%;
     transform: translateY(-40%);
     text-align: center;
+}
+.advice-text>p {
+    width: 90%;
+    margin: auto;
 }
 
 

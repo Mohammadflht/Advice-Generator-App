@@ -1,0 +1,14 @@
+@media only screen and (max-width: 535px) {
+    .advice-box {
+        width: 90%;
+    }
+    .advice-text {
+        font-size: 18px;
+    }
+    #mobile {
+        visibility: visible;
+    }
+    #desktop {
+        visibility: hidden;
+    }
+}
