@@ -58,7 +58,7 @@ body {
         box-shadow: 0 0 20px hsl(150, 100%, 66%);
     }
 }
-.devider {
+.divider {
     width: 90%;
     position: absolute;
     left: 50%;
