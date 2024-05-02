@@ -58,6 +58,10 @@ body {
         box-shadow: 0 0 20px hsl(150, 100%, 66%);
     }
 }
+
+.dice-rotate {
+    animation: dice-rotate ease-in-out 0.6s;
+}
 .divider {
     width: 90%;
     position: absolute;
@@ -89,5 +93,11 @@ body {
     margin: auto;
 }
 
-
-
+@keyframes dice-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
