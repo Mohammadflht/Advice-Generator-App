@@ -1,5 +1,5 @@
 document.querySelector('.dice').addEventListener('click', () => {
-    fetch('https://api.adviceslip.com/advice')
+    fetch(`https://api.adviceslip.com/advice?${new Date().getTime()}`)
     .then(response => response.json())
     .then(data => {
         document.querySelector('.advice-random-id').textContent = data.slip.id;
